@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.loginActivity"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:orientation="vertical">
+
+
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="40dp"
+            android:text="@string/titulo"
+            android:textSize="40dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TableRow
+                android:gravity="center"
+                android:paddingTop="20dp">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtEditRut"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/hintRut"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:nextFocusDown="@+id/txtEditDigitoVerificador"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textSize="60dp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/txtEditDigitoVerificador"
+                        android:layout_width="72dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="DV"
+                        android:inputType="textPersonName"
+                        android:maxLength="1"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+        </TableLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="15dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                    <EditText
+                        android:id="@+id/txtEditContrasena"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/hintContraseña"
+                        android:inputType="textPassword"
+                        android:maxLength="256"
+                        android:textColorHint="@color/colorAccent"
+                        android:textColor="@color/colorAccent"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button"
+                        android:id="@+id/btnIngresar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtIngresar"
+                        android:textColor="@color/cardview_dark_background"/>
+
+                    <Button
+                        style="@style/Widget.AppCompat.Button"
+                        android:id="@+id/btnSalir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btnSalir"
+                        android:textColor="@color/cardview_dark_background"/>
+                </LinearLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+</LinearLayout>

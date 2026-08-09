@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.Organizador.Personal.agregarPersonalActivity"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Agregar Personal"
+            android:textSize="30dp"
+            android:paddingBottom="60dp"
+            android:textColor="@color/colorAccent"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Rut Personal         "
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/colorAccent"/>
+                <EditText
+                    android:id="@+id/rutPersonalAgregar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="135dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:nextFocusDown="@+id/txtEditDVA"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/colorAccent"/>
+                <EditText
+                    android:id="@+id/txtEditDVA"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:maxLength="1"
+                    android:textColor="@color/colorAccent"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="Nombre Personal"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:text=" : "
+                    android:textColor="@color/colorAccent"/>
+                <EditText
+                    android:id="@+id/nombrePersonalAgregar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Contraseña"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:text=" : "
+                    android:textColor="@color/colorAccent"/>
+                <EditText
+                    android:id="@+id/contrasenaPersonalAgregar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableRow
+                android:gravity="center"
+                android:paddingBottom="50dp"
+                android:paddingTop="20dp">
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SpiAPTipoPersonal"
+                    android:textColor="@color/negro">
+                </Spinner>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnAgregarPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="AGREGAR"
+            android:textSize="30dp"
+            android:textColor="@color/cardview_dark_background"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

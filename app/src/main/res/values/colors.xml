@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="colorPrimary">#b0ffa3</color>
+    <color name="colorAccent">#44d42c</color>
+    <color name="foreground_material_dark_1">#212121</color>
+    <color name="foreground_material_dark_2">#201d1d</color>
+    <color name="background_material_light">#292929</color>
+    <color name="foreground_material_light">#e5dddd</color>
+    <color name="negro">#000000</color>
+    <color name="azul">#4049ff</color>
+    <color name="rojo">#d91200</color>
+
+    <color name="ordenNada">#ff2a2a</color>
+    <color name="ordenEnProceso">#ff9b04</color>
+    <color name="ordenFinalizada">#7b00ce</color>
+
+    <color name="touch1">#15843a</color>
+    <color name="touch2">#802929</color>
+    <color name="touch3">#cc7015</color>
+    <color name="touch4">#42016e</color>
+
+    <color name="blanco">#ffffff</color>
+
+    <color name="bordeSeleccion">#ffe921</color>
+    <color name="search_layover_bg">#80000000</color>
+    <color name="cardview_dark_background">#212121</color>
+    <color name="cardview_light_background">#ffffff</color>
+
+</resources>

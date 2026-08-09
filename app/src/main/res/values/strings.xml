@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">WorkOrder Manager</string>
+    <string name="titulo">Iniciar sesión</string>
+    <string name="hintRut">Ingresar rut</string>
+    <string name="hintContraseña">Contraseña</string>
+    <string name="hintContrasena">Contraseña</string>
+    <string name="hintContrase">Contraseña</string>
+    <string name="txtIngresar">INGRESAR</string>
+    <string name="btnSalir">Salir</string>
+    <string name="title_activity_prueba">prueba</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_ordenes_cliente">OrdenesCliente</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_ordenes_ycliente">OrdenesYCliente</string>
+    <string name="title_activity_ver_ordenes_personal">VerOrdenesPersonal</string>
+</resources>

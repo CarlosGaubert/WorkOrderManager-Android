@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="187dp"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tablaSitios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape">
+
+                <TableRow>
+                    <TextView
+                        android:text="ID Sitio"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_width="250dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text=" : "
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvIdSitio"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="999"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Nombre del sitio"
+                        android:gravity="center"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:layout_width="250dp"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:text=" : "
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"/>
+                    <TextView
+                        android:id="@+id/tvNombreSitio"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Sitio 1"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:text="Area del sitio"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:gravity="center"
+                        android:layout_width="250dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text=" : "
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvNombreArea"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Area 51"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:id="@+id/btnEliminarSitio"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_weight="1"
+                        android:text="Eliminar este sitio"
+                        android:textColor="@color/negro" />
+                </TableRow>
+
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="top"
+        android:layout_weight="0"
+        android:background="@color/colorAccent"
+        android:foregroundGravity="center" />
+
+
+</LinearLayout>

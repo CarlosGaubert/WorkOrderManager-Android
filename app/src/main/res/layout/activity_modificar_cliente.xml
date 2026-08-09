@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.Organizador.Cliente.modificarClienteActivity"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Modificar Cliente"
+            android:textSize="30dp"
+            android:paddingBottom="60dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+
+            <TableRow
+                android:gravity="bottom">
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Rut Personal     "
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" : "
+                    android:textColor="@color/colorAccent"/>
+                <EditText
+                    android:id="@+id/rutClienteModificar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="130dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:nextFocusDown="@+id/txtEditDVM"
+                    android:enabled="false"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/colorAccent"/>
+                <EditText
+                    android:id="@+id/txtEditDVM"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:maxLength="1"
+                    android:enabled="false"
+                    android:textColor="@color/colorAccent"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="Nombre Cliente"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:text=" : "
+                    android:textColor="@color/colorAccent"
+                    />
+                <EditText
+                    android:id="@+id/nombreClienteModificar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Contraseña"
+                    android:textColor="@color/colorAccent"/>
+                <TextView
+                    android:text=" : "
+                    android:textColor="@color/colorAccent"/>
+                <EditText
+                    android:id="@+id/contrasenaClienteModificar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/colorAccent"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="50dp"
+                android:gravity="center">
+                <TextView
+                    android:text="Sitio" />
+                <TextView
+                    android:text="                      :" />
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SpiMCSitio">
+                </Spinner>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnModifciarCliente"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="MODIFICAR"
+            android:textSize="30dp"
+            android:textColor="@color/negro"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

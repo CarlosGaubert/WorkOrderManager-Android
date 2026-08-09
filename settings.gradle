@@ -1,0 +1,2 @@
+rootProject.name = 'WorkOrderManager-Android'
+include ':app'

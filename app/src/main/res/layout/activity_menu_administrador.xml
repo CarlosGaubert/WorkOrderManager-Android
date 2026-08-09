@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.Organizador.menuOrganizadorActivity"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MENU ADMINISTRADOR"
+            android:paddingBottom="60dp"
+            android:textSize="25dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gestionar personal"
+                        android:id="@+id/btnAGestionarPersonal"
+                        android:textColor="@color/cardview_dark_background" />
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gestionar ordenes"
+                        android:id="@+id/btnAGestionarOrdenes"
+                        android:textColor="@color/cardview_dark_background"/>
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gestionar cliente"
+                        android:id="@+id/btnAGestionarClientes"
+                        android:textColor="@color/cardview_dark_background"/>
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gestionar sitios"
+                        android:id="@+id/btnAGestionarSitios"
+                        android:textColor="@color/cardview_dark_background"/>
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Gestionar areas"
+                        android:id="@+id/btnAGestionarAreas"
+                        android:textColor="@color/cardview_dark_background"/>
+                </TableRow>
+
+                <TableRow>
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Ver ordenes"
+                        android:id="@+id/btnAVerOrdenes"
+                        android:textColor="@color/cardview_dark_background"/>
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.informacion.InfoGestionOrdenes"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Informacion de la orden seleccionada"
+        android:textSize="30dp"
+        android:paddingBottom="40dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:padding="10dp">
+
+            <TableRow>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text="Codigo de orden"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text=" :  "
+                    android:textColor="@color/negro"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/idCodigoOrden"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Rut del cliente"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/rutCliente"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Nombre del cliente"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/nombreCliente"/>
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Fecha de orden pedida"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/fechaOrdenPedida"/>
+            </TableRow>
+
+
+
+
+
+
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Sitio de orden"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/nombreSitio"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Area de la orden"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/nombreArea"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text="Descripcion de la orden"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:text=" :  "
+                    android:textColor="@color/negro"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/descripcion"/>
+            </TableRow>
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

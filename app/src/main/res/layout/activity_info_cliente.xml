@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.informacion.InfoCliente"
+    android:padding="10dp"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Informacion del cliente seleccionado"
+        android:textSize="30dp"
+        android:paddingBottom="40dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cell_shape"
+            android:paddingTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center">
+
+            <TableRow >
+                <TextView
+                    android:textColor="@color/negro"
+                    android:textStyle="bold"
+                    android:text="Rut del cliente"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:text=" :  "
+                    android:textColor="@color/negro"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/rutClienteInfo"
+                    android:textStyle="italic"
+                    android:textSize="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Nombre del Cliente"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/nombreClienteInfo"
+                    android:textStyle="italic"
+                    android:textSize="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Lugar de trabajo"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/nombresitioInfo"
+                    android:textStyle="italic"
+                    android:textSize="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Area al que pertenece"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/nombreAreaInfo"
+                    android:textStyle="italic"
+                    android:textSize="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="50dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Cargo"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/tipoPersonalInfo"
+                    android:textStyle="italic"
+                    android:textSize="10dp"/>
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/negro"
+                    android:text="Contraseña"
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:text=" :  "
+                    android:textSize="10dp"/>
+                <TextView
+                    android:textColor="@color/negro"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/contrasenaInfo"
+                    android:textStyle="italic"
+                    android:textSize="10dp"/>
+            </TableRow>
+        </TableLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

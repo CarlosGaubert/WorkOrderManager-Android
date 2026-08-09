@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "935102187512",
+    "firebase_url": "https://ordenesdetrabajo-1ceb0.firebaseio.com",
+    "project_id": "ordenesdetrabajo-1ceb0",
+    "storage_bucket": "ordenesdetrabajo-1ceb0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935102187512:android:ac467d007b74bb4d",
+        "android_client_info": {
+          "package_name": "com.kendito.ote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935102187512-up35tsqrcbps2c1lo0jhi3se3ah4a0i8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kendito.ote",
+            "certificate_hash": "963b5ed2db22a591dc8fde2d2685abc77d4ebf5f"
+          }
+        },
+        {
+          "client_id": "935102187512-dmhctip6s7fviehfein8e0l9f6fn3o3r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Z1ZgW_y0YyuAKFP011Mpk4wCja-X2uo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935102187512-dmhctip6s7fviehfein8e0l9f6fn3o3r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

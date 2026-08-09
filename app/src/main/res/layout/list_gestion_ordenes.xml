@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tablaOrdenes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@drawable/cell_shape">
+
+                <TableRow android:padding="2dp">
+
+                    <TextView
+                        android:text="Codigo de orden"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView android:text=" : "
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvcodigoOrden"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="9999999999"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+
+
+                </TableRow>
+
+                <TableRow android:padding="2dp">
+
+                    <TextView
+                        android:text="Nombre de cliente"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView android:text=" : "
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvCliente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Cliente 1"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+                <TableRow android:padding="2dp">
+
+                    <TextView
+                        android:text="Descripcion"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView android:text=" : "
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvDescripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Descripcion"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+
+                <TableRow  android:padding="2dp">
+                    <TextView
+                        android:text="Fecha pedida orden"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView android:text=" : "
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvFechaOrden"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="01/10/1994"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow android:padding="2dp">
+                    <TextView
+                        android:text="Fecha pedida orden"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView android:text=" : "
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/tvFechaAOrden"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="01/10/1994"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+                </TableRow>
+
+                <TableRow android:padding="2dp">
+                    <TextView
+                        android:text="Estado de orden"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView android:text=" : "
+                        android:textStyle="bold"
+                        android:textColor="@color/blanco"/>
+                    <TextView
+                        android:id="@+id/tvEstado"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text="01/10/1994"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"
+                        android:textSize="15dp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent" />
+
+</LinearLayout>

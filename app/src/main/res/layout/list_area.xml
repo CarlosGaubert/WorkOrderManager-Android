@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="148dp"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/tablaArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="ID Area"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView
+
+                        android:text=" : "
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/tvIdArea"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="1"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Nombre area"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:text=" : "
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvNombreArea"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="10dp"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="Area 1"
+                        android:textColor="@color/blanco"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/btnEliminarCliente"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_weight="1"
+                        android:text="Eliminar esta area"
+                        android:textColor="@color/cardview_dark_background" />
+                </TableRow>
+
+            </TableLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent" />
+
+
+</LinearLayout>

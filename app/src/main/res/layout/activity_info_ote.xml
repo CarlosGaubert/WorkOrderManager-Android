@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.informacion.InfoOTE"
+    android:padding="40dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Informacion del software"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:paddingBottom="50dp"/>
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:paddingBottom="20dp">
+            <TextView
+                android:text="Programador "
+                />
+            <TextView
+                android:text=" : "/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Carlos Gaubert Quijada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:id="@+id/programador"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingBottom="20dp">
+            <TextView
+                android:text="Fecha de creacion"/>
+            <TextView
+                android:text=" : "/>
+            <TextView
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text=" 29/11/2017 "/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Este software se creo con el fin de presentar tesis de educacion superior para la carrera de Tecnico universitario en informatica. "/>
+
+</LinearLayout>

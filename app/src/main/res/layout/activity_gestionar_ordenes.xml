@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.Organizador.Ordenes.GestionarOrdenes"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gestionar Ordenes"
+            android:paddingBottom="30dp"
+            android:textSize="25dp"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_span="3"
+                    android:id="@+id/recyclerViewGestionarOrdenes"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TableRow
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Personal  "/>
+
+                <TextView
+                    android:text="      :      "/>
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerSelPersonal"
+                    android:background="@android:color/transparent">
+                </Spinner>
+            </TableRow>
+
+        </TableLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Asignar orden"
+                    android:textColor="@color/cardview_dark_background"
+                    android:id="@+id/btnAsignarOrden"/>
+
+            </TableRow>
+
+
+            <TableRow>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="Eliminar Orden"
+                    android:textColor="@color/cardview_dark_background"
+                    android:id="@+id/btnEliminarOrden"/>
+            </TableRow>
+
+
+        </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

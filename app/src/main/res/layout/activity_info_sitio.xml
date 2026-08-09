@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.informacion.InfoSitio"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Informacion del sitio seleccionada"
+        android:textSize="30dp"
+        android:paddingBottom="40dp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cell_shape"
+        android:padding="30dp">
+
+        <TableRow>
+            <TextView
+                android:textColor="@color/negro"
+                android:text="ID del sitio"
+                android:textStyle="bold"/>
+            <TextView
+                android:text=" :  "
+                android:textColor="@color/negro"/>
+            <TextView
+                android:textColor="@color/negro"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/idSitioInfo"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:text="Nombre del sitio"/>
+            <TextView
+                android:textColor="@color/negro"
+                android:text=" :  "/>
+            <TextView
+                android:textColor="@color/negro"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/nombreSitioInfo"/>
+        </TableRow>
+
+        <TableRow
+            android:paddingTop="30dp">
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/negro"
+                android:text="Nombre del area"/>
+            <TextView
+                android:textColor="@color/negro"
+                android:text=" :  "/>
+            <TextView
+                android:textColor="@color/negro"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/nombreAreaInfo"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>

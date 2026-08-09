@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Agregar Sitio"
+            android:textSize="30dp"
+            android:paddingBottom="20dp"/>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp">
+
+            <TableRow>
+                <TextView
+                    android:text="Nombre sitio "/>
+                <TextView
+                    android:text=" : "/>
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/txtnombreSitioAgregar"
+                    android:ems="10"
+                    android:inputType="textPersonName"/>
+            </TableRow>
+            <TableRow
+                android:paddingTop="10dp">
+                <TextView
+                    android:text="Area"/>
+                <TextView
+                    android:text=" : "/>
+                <Spinner
+                    android:id="@+id/SpiASarea"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content">
+                </Spinner>
+            </TableRow>
+
+        </TableLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAgregarSitio"
+            android:text="Agregar"
+            android:textSize="40dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

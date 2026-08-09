@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OTE</string>
+    <string name="titulo">Log in</string>
+    <string name="hintRut">Rut</string>
+    <string name="hintContraseña">Password</string>
+    <string name="txtIngresar">IN</string>
+    <string name="btnSalir">Exit</string>
+</resources>

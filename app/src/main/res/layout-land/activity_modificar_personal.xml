@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="25dp"
+    android:paddingBottom="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Modificar Personal"
+            android:textSize="30dp"
+            android:paddingBottom="30dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Rut Personal        "
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=" : "
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:id="@+id/rutPersonalModificar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="130dp"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:maxLength="8"
+                    android:nextFocusDown="@+id/txtEditDVM"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+                <EditText
+                    android:id="@+id/txtEditDVM"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:maxLength="1"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="Nombre Personal"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:text=" : "
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:id="@+id/nombrePersonalModifiar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"/>
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SpiMPTipoPersonal">
+                </Spinner>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Contraseña"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:text=" : "
+                    android:textColor="@android:color/black"/>
+                <EditText
+                    android:id="@+id/contrasenaPersonalModificar"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"/>
+
+                <Button
+                    android:id="@+id/btnModificarPersonal"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="MODIFICAR"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

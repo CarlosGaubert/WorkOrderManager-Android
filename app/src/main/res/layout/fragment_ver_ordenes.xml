@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kendito.ote.Personal_Organizador.VerOrdenesFragment"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver Ordenes"
+            android:paddingBottom="20dp"
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_span="3"
+            android:id="@+id/recyclerViewVerOrdenes"
+            android:layout_width="match_parent"
+            android:layout_height="190dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TableLayout
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+
+                    <TableRow>
+                        <Button
+                            android:id="@+id/btnAceptarOrden"
+                            android:layout_width="230dp"
+                            android:layout_height="60dp"
+                            android:text="Aceptar orden"
+                            android:textColor="@color/cardview_dark_background"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <Button
+                            android:id="@+id/btnVerificarOrdenTerminada"
+                            android:layout_width="230dp"
+                            android:layout_height="60dp"
+                            android:text="Verificar orden como realizada"
+                            android:textColor="@color/cardview_dark_background"/>
+                    </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</FrameLayout>
