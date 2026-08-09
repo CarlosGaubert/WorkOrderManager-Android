@@ -4,7 +4,7 @@
 [![Java](https://img.shields.io/badge/Language-Java-ED8B00?logo=openjdk&logoColor=white)](https://www.java.com/)
 [![Target SDK](https://img.shields.io/badge/Target%20SDK-34%20(Android%2014)-blue)](https://developer.android.com/about/versions/14)
 [![Min SDK](https://img.shields.io/badge/Min%20SDK-21%20(Android%205.0)-informational)](https://developer.android.com/)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **WorkOrder Manager** (anteriormente *OTE*) es una aplicación móvil nativa para Android desarrollada en **Java**, diseñada para la gestión, asignación y seguimiento en tiempo real del ciclo de vida de órdenes de trabajo y servicios técnicos.
 
@@ -58,7 +58,7 @@ Para compilar y ejecutar este proyecto se requiere:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/TU_USUARIO/WorkOrderManager-Android.git
+git clone https://github.com/CarlosGaubert/WorkOrderManager-Android.git
 cd WorkOrderManager-Android
 ```
 
@@ -98,6 +98,7 @@ WorkOrderManager-Android/
 ├── gradle/
 ├── build.gradle                                # Configuración raíz de Gradle
 ├── settings.gradle                             # Nombre del proyecto y módulos
+├── LICENSE                                     # Licencia MIT
 └── README.md
 ```
 
@@ -114,32 +115,6 @@ La aplicación se comunica con un backend REST alojado vía scripts PHP.
 
 ---
 
-## 📤 Cómo Subir este Proyecto a GitHub
-
-Si deseas publicar este proyecto en un repositorio nuevo de GitHub, ejecuta los siguientes comandos en tu terminal dentro de la carpeta del proyecto:
-
-```bash
-# 1. Inicializar el repositorio Git
-git init
-
-# 2. Agregar todos los archivos preparados (el .gitignore omitirá archivos temporales)
-git add .
-
-# 3. Crear el commit inicial
-git commit -m "feat: modernización completa a AndroidX, ViewBinding, SDK 34 y Material 3"
-
-# 4. Crear la rama main
-git branch -M main
-
-# 5. Vincular con tu repositorio remoto de GitHub
-git remote add origin https://github.com/TU_USUARIO/WorkOrderManager-Android.git
-
-# 6. Subir los cambios
-git push -u origin main
-```
-
----
-
 ## 📄 Licencia
 
-Este proyecto se distribuye bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
+Este proyecto se distribuye bajo la licencia **MIT**. Consulta el archivo [LICENSE](LICENSE) para más detalles.
